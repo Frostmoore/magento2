@@ -1,5 +1,6 @@
 Manual Installation instructions: First of all, download the plugin from the magento Marketplace, then:
 
+0. Backup your website and databases
 1. Create the folder /app/code/Frostmage/WBTPDC
 2. Extract all files in that folder
 3. php bin/magento setup:upgrade
