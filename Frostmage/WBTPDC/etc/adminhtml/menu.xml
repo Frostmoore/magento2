@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
-    <menu>
-        <add id="Frostmage_WBTPDC::settings" title="Weight Based Tax" translate="title" module="Frostmage_WBTPDC" parent="Magento_Backend::content" sortOrder="50" dependsOnModule="Frostmage_WBTPDC" resource="Frostmage_WBTPDC::settings"/>
-        <add id="Frostmage_WBTPDC::settings_value" title="Set Multiplier" translate="title" module="Frostmage_WBTPDC" parent="Frostmage_WBTPDC::settings" sortOrder="10" dependsOnModule="Frostmage_WBTPDC" action="wbtpdc/value" resource="Frostmage_WBTPDC::settings"/>
-    </menu>
-</config>
