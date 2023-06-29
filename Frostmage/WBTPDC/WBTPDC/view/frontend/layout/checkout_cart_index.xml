@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="checkout.cart.totals.container">
+            <block name="customcartblock" template="Frostmage_WBTPDC::customcartblock.phtml" after="-">
+                <arguments>
+                    <argument name="viewModel" xsi:type="object">Frostmage\WBTPDC\ViewModel\Customcartblock</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

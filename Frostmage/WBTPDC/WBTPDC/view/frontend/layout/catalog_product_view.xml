@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<body>
+    <referenceContainer name="product.info.main">
+        <block class="Frostmage\WBTPDC\Block\Product\View\Extra"
+            name="product.view.extra"
+            template="Frostmage_WBTPDC::product/view/extra.phtml"
+            before="product.price.tier">
+        </block>
+    </referenceContainer>
+	
+	<!--<referenceBlock name="product.info.details">
+		<block class="Magento\Catalog\Block\Product\View" name="custom.tab" as="custominfo" template="product/view/custom_info.phtml" group="detailed_info">
+			<arguments>
+				<argument translate="true" name="title" xsi:type="string">Specifiche</argument>
+				<argument name="priority" xsi:type="string">2</argument>
+			</arguments>
+		</block>
+	</referenceBlock>-->
+	
+	
+	<referenceBlock name="product.info.details">
+		<block class="Magento\Catalog\Block\Product\View" name="custom.tab.2" as="custominfo2" template="product/view/custom_info2.phtml" group="detailed_info">
+			<arguments>
+				<argument translate="true" name="title" xsi:type="string">Eco Contributo</argument>
+			</arguments>
+		</block>
+	</referenceBlock>
+</body>

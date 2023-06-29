@@ -1,0 +1,17 @@
+<div id="testdiv">
+    <a>Test anchor tag</a>
+</div>
+ 
+<?php
+$formData = [
+    'divElement'       =>  '#testdiv',
+];
+$serializedFormData = $this->helper('Magento\Framework\Json\Helper\Data')->jsonEncode($formData);
+?>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "wktestrequire": <?php /* @noEscape */ echo $serializedFormData; ?>
+        }
+    }
+</script>

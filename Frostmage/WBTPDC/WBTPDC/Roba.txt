@@ -1,0 +1,3 @@
+
+$helper = $this->helper('Frostmage\WBTPDC\Helper\Data');
+echo $helper->getConfig('wbtpdc/modifier/variable');

@@ -1,0 +1,14 @@
+<?php /* @var $block \Frostmage\WBTPDC\Block\Product\View\Extra */?>
+<?php $_product = $block->getProduct() ?>
+<h3 style="font-size: 1em; color: #bababa;"><?php 
+if ($_product->hasData('has_wbt'))
+{
+	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+	$wbtvalue = $objectManager->get('Magento\Framework\App\Config\ScopeConfigInterface')->getValue('wbtpdc/modifier/variable');
+
+	echo 'Valore Eco Contributo: ' . $_product->getData('weight') * $wbtvalue . ' €'; 
+
+}
+
+
+?></h3>
